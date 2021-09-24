@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- owl carousel css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap4/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/trangchu.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+</head>
+
+<body>
+    <header>
+        <div class="head-top container-fluid d-flex justify-content-between align-items-center">
+            <div class="store-left d-flex">
+                <div class="store-left__marker">
+                    <i class="fas fa-map-marker-alt"></i> Hệ thống cửa hàng
+                </div>
+                <div class="store-left__link d-flex">    
+                    <a class="nav-link border-right" href="#">Về chúng tôi</a>
+                    <a class="nav-link border-right" href="#">Phương thức thanh toán</a>
+                    <a class="nav-link" href="#">Trợ giúp</a>
+                </div>    			
+            </div> 
+            <div class="store-right">
+                <nav class="nav d-flex">
+                    <button class="nav-link js-login border-right">Đăng nhập</button>
+                    <button class="nav-link js-register">Đăng ký</button>			
+                </nav>
+            </div>
+        </div>
+
+        <div class="head-bottom">
+            <div class="header__logo">
+                <a href="" class="header__logo-link">
+                    <img class="header__logo-img" src="../images/logo.png">
+                </a>
+            </div>
+            <div class="header__search col-4 col-lg-5">
+                <form id="form_search" method="GET" action="">
+                    <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm ..."
+                            aria-label="" aria-describedat="basic-addon2">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Marco Reus</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Nam's healer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">Tìm kiếm</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact col-3 d-none d-lg-block">
+                <div class="contact_top position-relative">
+                    <div class="phone_number">0984253398</div>
+                    <p class="time w-100 text-center mb-0">(7h30 - 12h45 & 13h30 - 21h00)</p>
+                    <span class="icon-phone"><i class="fas fa-phone-alt"></i></span>
+                </div>
+            </div>
+            
+            <div class="header__cart">
+                <div class="header__cart-wrap">
+                    <i class="header__cart-icon fas fa-shopping-cart"></i>
+                    <span class="header__cart-notice">3</span>
+
+                    <!-- No cart -->
+                    <div class="header__cart-list header__cart-list--no-cart">
+                        <img src="../images/icon/no-cart.png" class="header__cart-no-cart-img">
+                        <span class="header__cart-list-no-cart-msg">
+                            Chưa có sản phẩm
+                        </span>
+                        <h4 class="header__cart-heading">
+                            Sản phẩm đã thêm
+                        </h4>
+                        <ul class="header__cart-list-item">
+                            <li class="header__cart-item">
+                                <img src="../images/product/pro1.jpg" alt="" class="header__cart-img">
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Bàn làm việc học tập, mặt bàn bo góc và định vị 4 lỗ bắt ốc dễ dàng ( đầy đủ phụ kiện lắp đặt )</h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">
+                                                1.154.000đ
+                                            </span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">Phân loại: Bạc</span>
+                                        <span class="header__cart-item-remove">Xóa</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="header__cart-list-item">
+                            <li class="header__cart-item">
+                                <img src="../images/product/pro11.jpg" class="header__cart-img">
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Bàn bệt gấp gọn chân sắt, dùng làm bàn làm việc bệt hoặc bàn ăn bệt gấp gọn ( lắp đặt sẵn )</h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">
+                                                416.000đ
+                                            </span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">Phân loại: Bạc</span>
+                                        <span class="header__cart-item-remove">Xóa</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="header__cart-list-item">
+                            <li class="header__cart-item">
+                                <img src="../images/product/pro13.jpg" alt="" class="header__cart-img">
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Bàn Tròn Mini Gỗ tự nhiên - Thiết Kế Đơn Giản Phòng cách Hiện Đại</h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">
+                                                1.150.000đ
+                                            </span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">Phân loại: Bạc</span>
+                                        <span class="header__cart-item-remove">Xóa</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="" class="header__cart-view-cart btn">Xem giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- menu section  -->
+    <section class="menu">
+        <ul id="nav">
+            <li><a href=""><i class="fas fa-home"></i></a></li>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li>
+                <a href="">Cửa hàng
+                    <i class="nav-arrow-down fas fa-caret-down"></i>
+                </a>
+                <div class="subnav">
+                    <ul class="subnav-list">
+                        <li><a href="../layout/Danhmuc.html">Bàn</a></li>
+                        <li><a href="">Ghế</a></li>
+                        <li><a href="">Nội thất gia đình</a></li>
+                        <li><a href="">Giá sắt</a></li>
+                        <li><a href="">Kệ sắt</a></li>
+                    </ul>
+                    <ul class="subnav-list">
+                        <li><a href="">Tủ</a></li>
+                        <li><a href="">Vách ngăn</a></li>
+                        <li><a href="">Nội thất hội trường</a></li>
+                        <li><a href="">Đồ gia dụng</a></li>
+                        <li><a href="">Két sắt</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Khuyến mãi</a></li>
+            <li><a href="">Tin tức</a></li>
+        </ul>
+    </section>
+
+    <!-- images slide-->
+    <section class="slide" id="slide">
+        <div class="home-slider owl-carousel">
+            <div class="item">
+                <img src="../images/slide1.png" alt="">
+                <div class="content">
+                    <p>29% Sale off</p>
+                    <h3>Nội thất cho mọi nhà</h3>
+                    <p>Các sản phẩm được cung cấp bởi các hàng nội thất danh giá trên toàn thế giới, đảm bảo uy tín cho người dùng</p>
+                    <a href="#"><button class="btn">Đặt hàng ngay</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../images/slide7.png" alt="">
+                <div class="content">
+                    <p>29% Sale off</p>
+                    <h3>Nội thất cho mọi nhà</h3>
+                    <p>Các sản phẩm được cung cấp bởi các hàng nội thất danh giá trên toàn thế giới, đảm bảo uy tín cho người dùng</p>
+                    <a href="#"><button class="btn">Đặt hàng ngay</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- san pham tieu bieu -->
+    <section class="representative" id="representative">
+        <h2 class="heading">Sản phẩm tiêu biểu</h2>
+
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="../images/product1.jpg" alt="">
+                <h3>Bàn ghế mây tre đan</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>%15.33</span>
+                <a href="#" class="btn">Add to cast</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="../images/product2.jpg" alt="">
+                <h3>Bàn ghế ngoài trời</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>%29.05</span>
+                <a href="#" class="btn">Add to cast</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="../images/product3.jpg" alt="">
+                <h3>Đèn ngủ để bàn</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>%13.04</span>
+                <a href="#" class="btn">Add to cast</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="../images/product4.jpg" alt="">
+                <h3>Tủ mini</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>%11.11</span>
+                <a href="#" class="btn">Add to cast</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="../images/product5.jpg" alt="">
+                <h3>Giường ngủ cao cấp</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>%31.05</span>
+                <a href="#" class="btn">Add to cast</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="../images/product6.jpg" alt="">
+                <h3>Tủ đựng quần áo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>%11.44</span>
+                <a href="#" class="btn">Add to cast</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trang trí nội thất -->
+    <section class="interior" id="interior">
+        <h2 class="heading">Trang trí nội thất</h2>
+        <div class="interior-slide owl-carousel">
+            <div class="box-container">
+                <div class="box">
+                    <div class="image-container">
+                        <img src="../images/instra1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Không gian đẹp nhờ sự kết hợp<br> các phong cách nội thất khác...</h5>
+                        <p>Hiện tại, mọi người thường do dự<br> trong việc kết hợp các [...]</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image-container">
+                        <img src="../images/instra2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Những thiết kế nội thất<br> khiến ngôi nhà rộng rãi hơn</h5>
+                        <p>Dưới đây là một số gợi ý giúp bạn<br> thiết kế nội thất [...]</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image-container">
+                        <img src="../images/instra3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Những căn phòng mang đậm<br> phong cách Paris</h5>
+                        <p>Hãy tham khảo các ý tưởng trang trí<br> nội thất theo phong [...]</p>
+                    </div>
+                </div> 
+            </div>
+        
+            <div class="box-container">
+                <div class="box">
+                    <div class="image-container">
+                        <img src="../images/instra4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Khoác áo mới cho phòng khách<br> đón hè về</h5>
+                        <p>Những màu sắc từ mùa đông sang<br>mùa xuân như thảm lông, [...]</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image-container">
+                        <img src="../images/instra5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Căn hộ 25m&#178; đẹp với nội thất<br> cực kỳ hợp lý</h5>
+                        <p>Nội thất đặt đóng riêng kết hợp cùng<br> cách bài trí thông [...]</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image-container">
+                        <img src="../images/instra6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Những căn phòng mang đậm<br> phong cách Paris</h5>
+                        <p>Hãy tham khảo các ý tưởng trang trí<br> nội thất theo phong [...]</p>
+                    </div>
+                </div> 
+            </div>
+        </div>    
+    </section>
+    
+    <!-- Hàng mới -->
+    <section class="products-new" id="products-new">
+        <h2 class="heading">Hàng mới</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="../images/new11.jpg" alt="">
+                <div class="content">
+                    <h3>Bộ sưu tập Urand</h3>
+                    <p> Đắm chìm trong thế giới đầy cảm hứng với một số nhà thiết kế và kiến trúc sư hàng đầu giỏi nhất</p>
+                    <a href="#" class="btn">Đặt hàng ngay</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../images/new12.jpg" alt="">
+                <div class="content">
+                    <h3>Bộ sưu tập Urand</h3>
+                    <p> Đắm chìm trong thế giới đầy cảm hứng với một số nhà thiết kế và kiến trúc sư hàng đầu giỏi nhất</p>
+                    <a href="#" class="btn">Đặt hàng ngay</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../images/new13.jpg" alt="">
+                <div class="content">
+                    <h3>Bộ sưu tập Urand</h3>
+                    <p> Đắm chìm trong thế giới đầy cảm hứng với một số nhà thiết kế và kiến trúc sư hàng đầu giỏi nhất</p>
+                    <a href="#" class="btn">Đặt hàng ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact us</h2>
+        <div class="icons-container">
+            <div class="icons">
+                <img src="../images/icon-1.png" alt="">
+                <h3>Phone Number</h3>
+                <p>+098-425-3398</p>
+            </div>
+
+            <div class="icons">
+                <img src="../images/icon-2.png" alt="">
+                <h3>Email Address</h3>
+                <p>phamvannam295@gmail.com</p>
+                <p>phamnam2905@gmail.com</p>
+            </div>
+
+            <div class="icons">
+                <img src="../images/icon-3.png" alt="">
+                <h3>Office Address</h3>
+                <p>91 đường Nguyễn Quang Minh, Thị trấn Vạn Hà, Thiệu Hóa, Thanh Hóa</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="number" placeholder="number">
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="email">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea name="" id="" placeholder="message" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="Send message">
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.8583051195237!2d105.67590011427878!3d19.888204231108855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3136f14821a848ad%3A0xac61d1d32d19bc0c!2zOTEgTmd1eeG7hW4gUXVhbmcgTWluaCwgVFQuIFbhuqFuIEjDoCwgVGhp4buHdSBIb8OhLCBUaGFuaCBIb8OhLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1631674418341!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <img src="../images/logo.png" alt=""> <span>Furn</span>
+                <p>Mang đến cho ngôi nhà của bạn một phong cách mới</p>
+                <div class="share">
+                    <a href="#" class="btn fab fa-facebook-f"></a>
+                    <a href="#" class="btn fab fa-twitter"></a>
+                    <a href="#" class="btn fab fa-instagram"></a>
+                    <a href="#" class="btn fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Về Furn</h3>
+                <div class="links">
+                    <a href="#">Trang chủ</a>
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Cửa hàng</a>
+                    <a href="#">Khuyến mãi</a>
+                    <a href="#">Tin tức</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Danh mục</h3>
+                <div class="box-link">
+                    <div class="links">
+                        <a href="#">Bàn</a>
+                        <a href="#">Ghế</a>
+                        <a href="#">Nội thất gia đình</a>
+                        <a href="#">Giá sắt</a>
+                        <a href="#">Kệ sắt</a>
+                    </div>
+                    <div class="links">
+                        <a href="#">Tủ</a>
+                        <a href="#">Vách ngăn</a>
+                        <a href="#">Nội thất hội trường</a>
+                        <a href="#">Đồ gia dụng</a>
+                        <a href="#">Két sắt</a>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="box">
+                <h3>Download app</h3>
+                <div class="links">
+                    <a href="#">Google play</a>
+                    <a href="#">App store</a>
+                    <a href="#">Window xp</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="credit">Created by <span>Nam's healer</span></h3>
+    </section>
+
+    <!-- Modal layout -->
+    <div class="modalRegister">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+
+            <!-- Đăng ký -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">
+                            Đăng ký
+                        </h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với Nam về
+                            <a href="">Điều khoản dịch vụ</a> & <a href="">Chính sách và bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="auth-form__btn auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="auth-form__btn auth-form__controls-register">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__btn">
+                        <i class="fab fa-facebook-square"></i>
+                        <span>Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__btn auth-form__socials--google">
+                        <i class="fab fa-google"></i>
+                        <span>Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- <div class="modalLogin">
+        <div class="modal__overlay"></div>
+        <div class="modal__body"> -->
+            <!-- Đăng nhập -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">
+                            Đăng nhập
+                        </h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="auth-form__btn auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="auth-form__btn auth-form__controls-register">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__btn">
+                        <i class="fab fa-facebook-square"></i>
+                        <span>Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__btn auth-form__socials--google">
+                        <i class="fab fa-google"></i>
+                        <span>Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </div>  -->
+
+
+</body>
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- owl carousel js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script type="text/javascript" src="../lib/bootstrap4/popper.min.js"></script>
+<script type="text/javascript" src="../lib/bootstrap4/bootstrap.min.js"></script>
+
+<script src="../cript.js"></script>
+</html>
